@@ -1,0 +1,97 @@
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+   align-items: center;
+}
+
+.justify-content-between {
+   justify-content: space-between;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.flex-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.gap-05 {
+    gap: 0.5rem;
+}
+
+.gap-08 {
+    gap: 0.8rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-1-5 {
+    gap: 1.5rem;
+}
+
+.fz-sm {
+    font-size: .785rem;
+}
+
+.fz-md {
+    font-size: 1rem;
+}
+
+.fz-lg {
+    font-size: 1.5rem;
+}
+
+.mr-05 {
+    margin-right: .5rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-1-5 {
+    margin-right: 1.4rem;
+}

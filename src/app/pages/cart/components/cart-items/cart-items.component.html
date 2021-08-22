@@ -1,0 +1,43 @@
+<div id="cart">
+    <div class="cart-container">
+        <div class="cart-title">
+            <h3>Carrinho ({{ cart.products.length}})</h3>
+        </div>
+        <div class="cart-items">
+            <div class="item d-flex" *ngFor="let product of cart.products">
+                <div class="mr-05 item-image">
+                    <img [src]="product.image" alt="">
+                </div>
+                <div class="d-flex flex-wrap justify-content-between w-100">
+                    <div class="d-flex flex-wrap flex-column gap-1-5" style="min-width: 21%;">
+                        <a class="item-name text-black fw-500">{{ product.name }}</a>
+                        <span class="item-shipping-info text-green fz-sm">{{ product.shiping }}</span>
+
+                        <div class="cart-actions d-flex flex-wrap gap-1-5 fz-sm">
+                            <a (click)="delete(product)" class="link">Excluir</a>
+                            <a class="link">Comprar agora</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item-quantity-container flex-1">
+                            <em class="item-quantity-selector">-</em>
+                            <input type="text" class="fz-md" [value]="product.quantity">
+                            <em class="item-quantity-selector">+</em>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-muted fz-sm">9 disponíveis</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item-price">
+                            <span class="item-price-tag-symbol">R$</span>
+                            <span class="item-price-tag-fraction">{{ product.fraction }}</span>
+                            <span class="item-price-tag-decimal-separator">,</span>
+                            <span class="item-price-tag-cents">{{ product.cents }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

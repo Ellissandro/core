@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictPropertyInitialization": false,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -16,6 +17,9 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "types": [
+      "jest"
+    ],
     "lib": [
       "es2018",
       "dom"

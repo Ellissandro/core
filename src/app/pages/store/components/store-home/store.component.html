@@ -1,0 +1,45 @@
+<section class="store">
+    <div class="container">
+        <div *ngFor="let product of products" class="card">
+            <div class="imgBx">
+                <img [src]="product.image" alt="">
+
+                <ul class="action">
+                    <li>
+                        <em class="fa fa-heart" aria-hidden="true"></em>
+                        <span>Add to Wishlit</span>
+                    </li>
+                    <li (click)="addToCart(product)">
+                        <em class="fa fa-shopping-cart" aria-hidden="true"></em>
+                        <span>Add to Cart</span>
+                    </li>
+                    <li>
+                        <em class="fa fa-eye" aria-hidden="true"></em>
+                        <span>VIew Details</span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="content">
+                <div class="productName">
+                    <h3>{{ product.name }}</h3>
+                </div>
+                <div class="price_rating">
+                    <h2 class="item-price">
+                        <span class="item-price-tag-symbol">R$</span>
+                        <span class="item-price-tag-fraction">{{ product.fraction }}</span>
+                        <span class="item-price-tag-decimal-separator">,</span>
+                        <span class="item-price-tag-cents">{{ product.cents }}</span>
+                    </h2>
+                    <div class="rating">
+                        <em class="fa fa-star" aria-hidden="true"></em>
+                        <em class="fa fa-star" aria-hidden="true"></em>
+                        <em class="fa fa-star" aria-hidden="true"></em>
+                        <em class="fa fa-star" aria-hidden="true"></em>
+                        <em class="fa fa-star grey" aria-hidden="true"></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
