@@ -9,4 +9,12 @@ export const ROOT_ROUTES: Routes = [
     path: 'cart',
     loadChildren: () => import('../../pages/cart/cart.module').then(m => m.CartModule)
   },
+  {
+    path: 'components',
+    loadChildren: () => import('../../pages/components/components.module').then(m => m.ComponentsModule)
+  },
+  {
+    path: 'graphic',
+    loadChildren: () => import('../../pages/graphic/graphic.module').then(m => m.GraphicModule)
+  },
 ];

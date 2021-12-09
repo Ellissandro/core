@@ -14,8 +14,8 @@ export class SidebarComponent implements OnInit {
   tempMenu: Menu[] = [];
 
   constructor(private el: ElementRef, 
-    private sidebarService: SidebarService,
-    private util: Util) { }
+              private sidebarService: SidebarService,
+              private util: Util) { }
 
   formatSearch = (text: string) => this.util.removeAccents(text).toLowerCase();
 
