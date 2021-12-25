@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GrapicBarComponent } from './grapic-bar.component';
+import { MemoryGameDeckComponent } from './memory-game-deck.component';
 
-describe('GrapicBarComponent', () => {
-  let component: GrapicBarComponent;
-  let fixture: ComponentFixture<GrapicBarComponent>;
+describe('MemoryGameDeckComponent', () => {
+  let component: MemoryGameDeckComponent;
+  let fixture: ComponentFixture<MemoryGameDeckComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GrapicBarComponent ]
+      declarations: [ MemoryGameDeckComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GrapicBarComponent);
+    fixture = TestBed.createComponent(MemoryGameDeckComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

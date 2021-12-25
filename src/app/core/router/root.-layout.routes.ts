@@ -14,7 +14,7 @@ export const ROOT_ROUTES: Routes = [
     loadChildren: () => import('../../pages/components/components.module').then(m => m.ComponentsModule)
   },
   {
-    path: 'graphic',
-    loadChildren: () => import('../../pages/graphic/graphic.module').then(m => m.GraphicModule)
+    path: 'memory-game',
+    loadChildren: () => import('../../pages/memory-game/memory-game.module').then(m => m.MemoryGameModule)
   },
 ];

@@ -4,7 +4,7 @@
   top: 0;
   height: 100%;
   width: 78px;
-  background: var(--color-primary);
+  background: var(--primary);
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
@@ -31,8 +31,8 @@
     }
 
     .bx-search:hover {
-      background: var(--color-secondary);
-      color: var(--color-white);
+      background: var(--secondary);
+      color: var(--white);
     }
 
     li a .links_name{
@@ -67,7 +67,7 @@
     }
 
     .logo_name {
-      color: var(--color-white);
+      color: var(--white);
       font-size: 20px;
       font-weight: 600;
       opacity: 0;
@@ -89,7 +89,7 @@
   }
 
   em {
-    color: var(--color-white);
+    color: var(--white);
     height: 60px;
     min-width: 50px;
     font-size: 28px;
@@ -113,7 +113,7 @@
     top: -20px;
     left: calc(100% + 15px);
     z-index: 3;
-    background: var(--color-white);
+    background: var(--white);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
     border-radius: 4px;
@@ -139,7 +139,7 @@
 
   input {
     font-size: 15px;
-    color: var(--color-white);
+    color: var(--white);
     font-weight: 400;
     outline: none;
     height: 50px;
@@ -148,7 +148,7 @@
     border: none;
     border-radius: 12px;
     transition: all 0.5s ease;
-    background: var(--color-secondary);
+    background: var(--secondary);
   }
 
   .bx-search {
@@ -157,12 +157,12 @@
     left: 0;
     transform: translateY(-50%);
     font-size: 22px;
-    background: var(--color-secondary);
-    color: var(--color-white);
+    background: var(--secondary);
+    color: var(--white);
 
     &:hover {
-      background: var(--color-white);
-      color: var(--color-primary);
+      background: var(--white);
+      color: var(--primary);
     }
   }
 
@@ -174,14 +174,14 @@
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-    background: var(--color-primary);
+    background: var(--primary);
     &:hover, &.active {
-      background: var(--color-white);
+      background: var(--white);
     }
   }
 
   li a .links_name{
-    color: var(--color-white);
+    color: var(--white);
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
@@ -193,7 +193,7 @@
   li a:hover .links_name, li a.active .links_name,
   li a:hover em, li a.active em{
     transition: all 0.5s ease;
-    color: var(--color-primary);
+    color: var(--primary);
   }
 
   li em{
@@ -210,7 +210,7 @@
     left: 0;
     bottom: -8px;
     padding: 10px 14px;
-    background: var(--color-secondary);
+    background: var(--secondary);
     transition: all 0.5s ease;
     overflow: hidden;
   }
@@ -233,7 +233,7 @@
   li.profile .job{
     font-size: 15px;
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--white);
     white-space: nowrap;
   }
 
@@ -246,7 +246,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background: var(--color-secondary);
+    background: var(--secondary);
     width: 100%;
     height: 60px;
     line-height: 60px;
@@ -268,7 +268,7 @@
 
 // .home-section .text{
 //   display: inline-block;
-//   color: var(--color-primary);
+//   color: var(--primary);
 //   font-size: 25px;
 //   font-weight: 500;
 //   margin: 18px

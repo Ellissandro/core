@@ -1,0 +1,15 @@
+<div class="deck" [style.grid-template-columns]="'repeat('+ maxPerColumn +', 125px)'">
+    <div (click)="toogleCard(card)" 
+        *ngFor="let card of deck.cards; index as i; trackBy: identify">
+        <div 
+            class="card"
+            [class.match]="card.match"
+            *ngIf="card.opened || card.match"
+            [style.background]="card.color">
+        </div>
+       
+        <div class="card" *ngIf="!card.opened && !card.match">
+            <span>{{ i + 1 }}</span>
+        </div>
+    </div>
+</div>

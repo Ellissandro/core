@@ -1,0 +1,43 @@
+$borderRadius: 10px;
+
+.deck {
+    perspective: 800px;
+    display: grid;
+    justify-content: center;
+    background-color: var(--primary);
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+    display: inline-grid;
+    border-radius: $borderRadius;
+
+    .card {
+        height: 125px;
+        width: 125px;
+        background-color: var(--white);
+        border-radius: $borderRadius;
+        transition: all 800ms ease-out;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-weight: bold;
+            font-size: 3rem;
+            font-family: 'roboto', sans-serif;
+        }
+    }
+}
+
+.rotate-180deg {
+    transform: rotate3d(0, 1, 0, 180deg);
+
+}
+.rotate-0deg {
+    transform: rotate3d(0, 1, 0, 0deg);
+}
+
+.match {
+   border-radius: 100% !important;
+}
